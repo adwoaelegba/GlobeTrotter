@@ -1,0 +1,2 @@
+# GlobeTrotter
+A travel website
