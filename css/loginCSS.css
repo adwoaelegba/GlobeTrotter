@@ -20,7 +20,7 @@
 
 #heading{
     font-size: 100px;
-    margin-top: 150px;
+    margin-top: 350px;
     font-family: 'Lobster';
     /*text-align: center;
     justify-content: center;*/
@@ -83,4 +83,10 @@
 
 a{
     margin-left: 70px;
+}
+
+#country{
+    font-family: 'EB Garamond';
+    font-size:150px;
+    color: wheat;
 }
