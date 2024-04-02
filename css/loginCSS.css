@@ -90,3 +90,10 @@ a{
     font-size:150px;
     color: wheat;
 }
+
+#name-error, #pass-error{
+    color: red;
+    position: absolute;
+    font-size: 14px;
+    margin-left: 20px;
+}

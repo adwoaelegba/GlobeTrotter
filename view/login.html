@@ -31,9 +31,14 @@
  <p id="log">Log In</p>
  <div id="log-box">
     <form action="">
-        <input type="email" id="email" name="email" placeholder="Email" required >
+        <input type="email" id="email" name="email" placeholder="Email" required onkeyup="valEmail()"> 
+        <span id="email-error"></span>
+
         <input type="password" id="password" name="password" placeholder="Password">
+        <span id="pass-error"></span>
+
         <button type="submit" id="sub-button">Log In</button>
+
         <a href="">Don't have an account? Register now</a>
 
 
