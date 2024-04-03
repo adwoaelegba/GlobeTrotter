@@ -26,7 +26,10 @@
     transform: translate(-50%, -50%);
     z-index: -1;
 }
-
+#logo{
+    width: 20%;
+    height: 20%;
+}
 
 #heading{
     font-size: 100px;
