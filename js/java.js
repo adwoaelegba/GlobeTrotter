@@ -1,4 +1,5 @@
 //log in country change
+document.addEventListener('DOMContentLoaded', function() {
 var countries= ['Bali', 'Greece', 'The Maldives','Mauritius', 'Japan','Ghana','Morrocco', 'Ireland','India','Turkey','Italy'];
 
 function RandCountry(){
@@ -17,7 +18,7 @@ RandCountry();
 
 setInterval(changeCountry,1500);
 
-
+});
 
 //JS valiidation
 var emailError= document.getElementById('email-error');
@@ -34,7 +35,7 @@ function valEmail(){
     }
 
     
-    if(!email.match(/^[A-Za-Z]\._\-[0-9]*[@][A-Za-Z]*[\.][a-z]{2,4}$/)){
+    if(!email.match(/^[A-Za-z]\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
             emailError.innerHTML='Email invalid'
             return false;
      }

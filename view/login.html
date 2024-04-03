@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
 
-    <link rel="stylesheet" href="/css/loginCSS.css">
+    <link rel="stylesheet" href="../css/loginCSS.css">
 <!--Favicon icons-->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+<link rel="manifest" href="../site.webmanifest">
 
  <!-- Font Awesome CDN link  -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
@@ -23,28 +23,33 @@
 <body>
 
 
-<div class="background">
-       <img src="../images/resort2.jpg" alt="" id="image">
-  
- <h1 id="heading">Start Your Travel <br>Adventure In <br><span id="country">Bali</span></h1>
+    <div class="background">
+        <img src="../images/resort2.jpg" alt="" id="image">
+        <img src="../images/globetrotter-high-resolution-logo-transparent.png" alt="" id="image">
 
- <p id="log">Log In</p>
- <div id="log-box">
-    <form action="">
-        <input type="email" id="email" name="email" placeholder="Email" required onkeyup="valEmail()"> 
-        <span id="email-error"></span>
+   
+  <h1 id="heading">Start Your Travel <br>Adventure In <br><span id="country">Bali</span></h1>
+ 
+  <p id="log">Log In</p>
+  <div id="log-box">
+     <form action="">
+         <input type="email" id="email" name="email" placeholder="Email" required onkeyup="valEmail()"> 
+         <span id="email-error"></span>
+ 
+         <input type="password" id="password" name="password" placeholder="Password">
+         <span id="pass-error"></span>
+ 
+         <button type="submit" id="sub-button">Log In</button>
+ 
+         <a href="">Don't have an account? Register now</a>
+ 
+ 
+     </form>
+ 
+  </div>
+     
 
-        <input type="password" id="password" name="password" placeholder="Password">
-        <span id="pass-error"></span>
-
-        <button type="submit" id="sub-button">Log In</button>
-
-        <a href="">Don't have an account? Register now</a>
-
-
-    </form>
-
- </div>
+ 
     
     
 </body>
