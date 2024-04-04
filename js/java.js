@@ -1,6 +1,6 @@
 //log in country change
 document.addEventListener('DOMContentLoaded', function() {
-var countries= ['Bali', 'Greece', 'The Maldives','Mauritius', 'Japan','Ghana','Morrocco', 'Ireland','India','Turkey','Italy'];
+var countries= ['Bali', 'Greece', 'Namibia','Mauritius', 'Japan','Ghana','Morrocco', 'Ireland','India','Turkey','Italy'];
 
 function RandCountry(){
     return countries[Math.floor(Math.random()* countries.length)];
