@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
 
-    <link rel="stylesheet" href="../css/loginCSS.css">
+    <link rel="stylesheet" href="../css/registerCSS.css">
 <!--Favicon icons-->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,35 +24,36 @@
     <div id="back">
         <!--<img src="../images/login.jpg" alt="" id="side-pic">-->
         <div id="content">
-            <img src="../images/globetrotter-high-resolution-logo-black-transparent.png" alt="" id="logo">
+            <img src="../images/globetrotter-high-resolution-logo-white-transparent.png" alt="" id="logo">
+            
             <div id="reg-box">
-                <form action="">
-                    <input type="text" id="firstname" name="firstname" placeholder="e.g Nana Adwoa" required> 
+                <h2 id="register">Register</h2>
+                <form action="" id="form">
+                    <input type="text" id="firstname" name="firstname" placeholder="First name" required> 
                    
-                    <input type="text" id="lastname" name="lastname" placeholder="e.g Elegba" required> 
+                    <input type="text" id="lastname" name="lastname" placeholder="Last name" required> 
                    
 
                   <input type="email" id="email" name="email" placeholder="Email" required onkeyup="valEmail()"> 
                     <span id="email-error"></span>
 
-                    <input type="text" id="country" name="country" placeholder="e.g Ghana" required> 
+                    <input type="text" id="country" name="country" placeholder="Country" required> 
 
-                    <input type="t" id="country" name="country" placeholder="e.g Ghana" required>
-                    h2>Select a role:</h2>
+                   <h2 id="role">Select a role:</h2>
                         <select id="role-select">
                          <option value="User">User</option>
                          <option value="Travel Agent">Travel Agent</option>
                          <option value="Admin">Admin</option>
                          
-                     
                     <input type="password" id="password" name="password" placeholder="Password">
                     <span id="pass-error"></span>
-                    <button type="submit" id="sub-button">Log In</button>
+
+                    <button type="submit" id="sub-button">Register</button>
                     <a href="../view/login.html">Have an account? Log In</a>
                 </form>
             </div>
         </div>
-    </div>
+    
     
         
 </body>
