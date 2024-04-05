@@ -72,7 +72,7 @@
 
 hr {
     border: none;
-    border-top: 10px solid #ccc; /* Change color and width as needed */
+    border-top: 10px solid black; /* Change color and width as needed */
     margin: 20px 0; /* Add space above and below the line */
 }
 
@@ -130,4 +130,10 @@ hr {
     font-size: 80px;
     color: white;
     font-family: 'Lobster';
+}
+
+.stat{
+    font-size: 25px;
+    color: white;
+    font-family: 'EB Garamond';
 }
