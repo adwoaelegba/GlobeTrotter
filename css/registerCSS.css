@@ -20,12 +20,7 @@
     transform: translate(-50%, -50%);
     z-index: -1;
 }
-#back {
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}*/
+*/
 
 #register{
     font-size: 30px;
@@ -40,20 +35,12 @@
     color: white;
 }
 
-/*#content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; /* Centers the content 
-    z-index: 1; /* Ensures content is above the image
-} */
+
 
 #logo{
     width: 20%;
     height: 20%;
-    /*margin-left: -500px;
-    margin-top: -70px;*/
+    
 }
 
 #reg-box{
