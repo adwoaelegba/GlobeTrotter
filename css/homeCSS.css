@@ -97,19 +97,11 @@ hr {
     padding: 20px; /* Add padding to create space around content */
     text-align: center; /* Center-align content */
     margin: 20px; /* Add margin for spacing between boxes */
-   /* width: 450px;
-    height: 600px;
-    border-radius: 10px;
-    margin-top: 200px;
-    margin-right:250px;
-    margin-left: -150px;
-    border: none;
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);*/
 
 
 }
 
-#tourist-sites {
+#tourist-sites,#hotels {
     display: flex;
     flex-wrap: nowrap; /* Prevents wrapping to new lines */
     justify-content: space-around; /* Aligns items with equal space between them */
@@ -182,4 +174,33 @@ hr {
     color: white;
     font-family: 'EB Garamond';
 }
+#ready-title{
+    font-size: 80px;
+    color: white;
+    font-family: 'Lobster';
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+}
 
+#ready-stat{
+    font-size: 50px;
+    color: white;
+    font-family: 'EB Garamond';
+    margin-top: -50px;
+    text-align: center;
+    justify-content: center;
+}
+
+#book{
+    width: 500px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:white;
+    border-radius: 15px;
+    margin-top: -60px; 
+    justify-content: center;
+    margin-left: 550px;
+}

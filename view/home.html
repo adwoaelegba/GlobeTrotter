@@ -29,7 +29,7 @@
         </div>
         <img src="../images/globetrotter-high-resolution-logo-white-transparent.png" alt="" id="logo">
         <h1 id="title">Where are we going today?</h1>
-        <input type="text" id="search" name="search" placeholder="search">
+        <input type="text" id="search" name="search" placeholder="Search">
 
         <div id="options">
             <p id="label1" onclick="changeHeading()"><i class="fa-solid fa-umbrella-beach"></i> Destinations</p>
@@ -41,7 +41,7 @@
         <!--Packages-->
         <h2 id="package-title">Choose The Best Package</h2>
         <p class="tour-stat">See the wide range of tourist sites you can  visit</p>
-        
+
         <div id="packages">
         <section id="show-pack">
          <img src="../images/couple.jpg" alt="" id="couple">
@@ -75,55 +75,54 @@
 
 <!--Tourist sites package-->
 <hr>
-<h2 id="tour-title">Plan trips to beautiful tourist sites</h2>
-<p class="tour-stat">See the wide range of tourist sites you can  visit</p>
+<h2 id="tour-title">Plan trips to beautiful countries</h2>
+<p class="tour-stat">See the wide range of countries you can  visit</p>
 
 <div id="tourist-sites">
     <section class="tour-pack">
         <img src="../images/Tajmahal.jpg" alt="" id="couple">
-        <p id="pack-title">Taj Mahal</p>
+        <p id="pack-title">India</p>
         <p id="pack-stat">A beautiful monumental castle in India</p>
-        <p id="pack-agent">India</p>
+      <!--<p id="pack-agent">India</p>-->  
     </section>
 
     <section class="tour-pack">
         <img src="../images/elmina.jpg" alt="" id="couple">
-        <p id="pack-title">Elmina Castle</p>
+        <p id="pack-title">Ghana</p>
         <p id="pack-stat">This slave trade castle holds rich Ghanaian heritage</p>
-        <p id="pack-agent">Ghana</p>
+       <!--<p id="pack-agent">Ghana</p>--> 
     </section>
 
     <section class="tour-pack">
         <img src="../images/christ.jpg" alt="" id="couple">
-        <p id="pack-title">Christ the Redeeemer</p>
+        <p id="pack-title">Brazil</p>
         <p id="pack-stat">A tall statue of Jesus Christ</p>
-        <p id="pack-agent">Brazil
+        <!--<p id="pack-agent">Brazil-->
         </p>
     </section>
 </div>
 <button id="see-more">See more sites</button>
 
-
-<!--<div id="hotels">
-    <h2 id="bud-title">Stay in comfort</h2>
-<p class="stat">See the wide range of hotels you can book</p> 
-
-<section id="show-pack">
+<hr>
+<h2 id="tour-title">Stay in comfort</h2>
+<p class="tour-stat">See the wide range of hotels you can book</p> 
+<div id="hotels">
+<section class="tour-pack">
     <img src="../images/ritz.jpg" alt="" id="couple">
     <p id="pack-title">Ritz-Carlton</p>
     <p id="pack-stat">This is a 5-star hotel in Vienna</p>
     <p id="pack-agent">Vienna</p>
 </section>
 
-<section id="show-pack">
+<section class="tour-pack">
     <img src="../images/waldorf.jpg" alt="" id="couple">
     <p id="pack-title">Waldorf Astoria</p>
     <p id="pack-stat">This is a 5-star hotel in Paris</p>
     <p id="pack-agent">Paris</p>
 </section>
 
-<hr>
-<section id="show-pack">
+
+<section class="tour-pack">
     <img src="../images/theplaza.jpg" alt="" id="couple">
     <p id="pack-title">The Plaza </p>
     <p id="pack-stat">This is a 5-star hotel in New York</p>
@@ -135,19 +134,21 @@
 <button id="see-more">See more hotels</button>
 <hr>
 
-<hr>
+<!--Feedback-->
 <div id="feedback">
     <h2 id="bud-title">Hear from others</h2>
     <p class="stat">Check out reviews from satisified customers</p> 
-    <button>See reviews</button>
+    <button id="see-more">See reviews</button>
 </div>
 <hr>
+<h2 id="ready-title">Ready to travel the world?</h2>
+<h2 id="ready-stat">Book a trip</h2>
+<button id="book">Book a trip<i class="fa-solid fa-arrow-right"></i></button>
        
     </div>
 
 
 
--->
 
 
     <script>
@@ -176,6 +177,11 @@ function changeHeading2(){
 
    title2.innerText = "Discover tourist sites";
    search2.innerText='Search for tourist sites';
+
+
+   document.getElementById("book").addEventListener("click", function() {
+            window.location.href = "newpage.html"; // Replace "newpage.html" with the URL of the new page
+        });
 }
     </script>
     
