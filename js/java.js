@@ -1,24 +1,4 @@
-//log in country change
-document.addEventListener('DOMContentLoaded', function() {
-var countries= ['Bali', 'Greece', 'Namibia','Mauritius', 'Japan','Ghana','Morrocco', 'Ireland','India','Turkey','Italy'];
 
-function RandCountry(){
-    return countries[Math.floor(Math.random()* countries.length)];
-}
-
-function changeCountry() {
-    var country=document.getElementById('country');
-    var getCountry=RandCountry();
-    country.textContent=getCountry;
-
-
-}
-
-RandCountry();
-
-setInterval(changeCountry,1500);
-
-});
 
 //JS valiidation
 var emailError= document.getElementById('email-error');
@@ -44,3 +24,30 @@ function valEmail(){
      return true;
 
     }
+
+
+    //slider
+    
+var swiper = new Swiper(".cardSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    //breakpoints: {
+    //    640: {
+     //   slidesPerView: 2,
+      //  spaceBetween: 20,
+     //   },
+       //  768: {
+       //  slidesPerView: 4,
+        // spaceBetween: 40,
+        // },
+       //  1024: {
+        // slidesPerView: 5,
+        // spaceBetween: 50,
+        // },
+       //  },
+});
+    
