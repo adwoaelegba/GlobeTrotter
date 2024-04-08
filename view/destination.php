@@ -44,7 +44,7 @@
 <div class="slider-cont">
 <div class="swiper cardSwiper">
     <div class="swiper-wrapper">
-        <!--slider-->
+        <!--slider sart-->
       <div class="swiper-slide">
         <div class="card ghana-bg">
             <div class="card-img">
@@ -67,7 +67,30 @@
 
         </div>
       </div>
-     <!--slider-->
+     <!--slider end-->
+     <!--slider sart-->
+     <div class="swiper-slide">
+        <div class="card naija-bg">
+            <div class="card-img">
+                <img src="../images/nigeria.png" alt=""  class="ghana">
+                <span class="number">1</span>
+            </div>
+
+            <div class="card-content">
+                <div class="info">
+                    <h2>Nigeria</h2>
+                    <div class="sub-info">
+                        <span>Country</span>
+                        <h4>Africa</h4>
+                    </div>
+                </div>
+                <div class="read-more-btn">
+                    <a><span>Read more</span></a>
+                </div>
+            </div>
+
+        </div>
+      </div>
     </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
