@@ -19,7 +19,6 @@
             <div class="nav-items">
                 <a href="../view/home.php">Home</a>
                 <a href="../view/destination.php">Destinations</a>
-                <a href="../view/hotels.php">Hotels</a>
                 <a href="../view/package.php">Packages</a>
                 <a href="../view/book.php">Book trip</a>
                 <a href="../view/budget.php">Budget calculator</a>
