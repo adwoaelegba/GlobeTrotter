@@ -29,7 +29,7 @@ function valEmail(){
     //slider
     
 var swiper = new Swiper(".cardSwiper", {
-    slidesPerView: 1,
+    slidesPerView: 4,
     spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",

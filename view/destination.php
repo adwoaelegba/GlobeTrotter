@@ -68,12 +68,12 @@
         </div>
       </div>
      <!--slider end-->
-     <!--slider sart-->
+     <!--slider start-->
      <div class="swiper-slide">
         <div class="card naija-bg">
             <div class="card-img">
-                <img src="../images/nigeria.png" alt=""  class="ghana">
-                <span class="number">1</span>
+                <img src="../images/nigeria.png" alt=""  class="naija">
+                <span class="number">2</span>
             </div>
 
             <div class="card-content">
@@ -91,6 +91,105 @@
 
         </div>
       </div>
+       <!--slider end-->
+       <!--slider start-->
+     <div class="swiper-slide">
+        <div class="card mauritius-bg">
+            <div class="card-img">
+                <img src="../images/mauritius.png" alt=""  class="mauritius">
+                <span class="number">3</span>
+            </div>
+
+            <div class="card-content">
+                <div class="info">
+                    <h2>Mauritius</h2>
+                    <div class="sub-info">
+                        <span>Country</span>
+                        <h4>Africa</h4>
+                    </div>
+                </div>
+                <div class="read-more-btn">
+                    <a><span>Read more</span></a>
+                </div>
+            </div>
+
+        </div>
+      </div>
+       <!--slider end-->
+       <!--slider start-->
+     <div class="swiper-slide">
+        <div class="card italy-bg">
+            <div class="card-img">
+                <img src="../images/italy.png" alt=""  class="italy">
+                <span class="number">4</span>
+            </div>
+
+            <div class="card-content">
+                <div class="info">
+                    <h2>Italy</h2>
+                    <div class="sub-info">
+                        <span>Country</span>
+                        <h4>Europe</h4>
+                    </div>
+                </div>
+                <div class="read-more-btn">
+                    <a><span>Read more</span></a>
+                </div>
+            </div>
+
+        </div>
+      </div>
+       <!--slider end-->
+       <!--slider end-->
+       <!--slider start-->
+     <div class="swiper-slide">
+        <div class="card france-bg">
+            <div class="card-img">
+                <img src="../images/france.png" alt=""  class="france">
+                <span class="number">5</span>
+            </div>
+
+            <div class="card-content">
+                <div class="info">
+                    <h2>France</h2>
+                    <div class="sub-info">
+                        <span>Country</span>
+                        <h4>Europe</h4>
+                    </div>
+                </div>
+                <div class="read-more-btn">
+                    <a><span>Read more</span></a>
+                </div>
+            </div>
+
+        </div>
+      </div>
+       <!--slider end-->
+       <!--slider end-->
+       <!--slider start-->
+     <div class="swiper-slide">
+        <div class="card barb-bg">
+            <div class="card-img">
+                <img src="../images/barbados.png" alt=""  class="barbados">
+                <span class="number">6</span>
+            </div>
+
+            <div class="card-content">
+                <div class="info">
+                    <h2>Barbados</h2>
+                    <div class="sub-info">
+                        <span>Country</span>
+                        <h4>N.America</h4>
+                    </div>
+                </div>
+                <div class="read-more-btn">
+                    <a><span>Read more</span></a>
+                </div>
+            </div>
+
+        </div>
+      </div>
+       <!--slider end-->
     </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>

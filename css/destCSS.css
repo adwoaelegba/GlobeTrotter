@@ -118,6 +118,17 @@ width: 100%;
     font-size: 18px;
     background: #fff;
     display: flex;
+    margin-left: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 380px;
+  }
+  .swiper-slide-naija{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    margin-left: 200px;
     justify-content: center;
     align-items: center;
     margin-top: 380px;
@@ -162,13 +173,65 @@ width: 100%;
     transform: translateY(-40px) scale(1.1);
   }
 
+  .card:hover .naija{
+    transform: translateY(-40px) scale(1.1);
+  }
+  .card:hover .mauritius{
+    transform: translateY(-40px) scale(1.1);
+  }
+
   .ghana{
     width: 180px;
     top: -45px;
     right: 75px;
 
   }
+  .naija{
+    width: 200px;
+    top: -60px;
+    right: 40px;
 
+  }
+
+  .mauritius{
+    width: 215px;
+    top: -80px;
+    right: 40px;
+
+  }
+
+
+  .france{
+
+  }
+
+  .italy{
+
+  }
+
+  .barbados{
+
+  }
+
+  .naija-bg{
+    background: rgb(24, 105, 24);
+  }
+
+  .mauritius-bg{
+    background: rgb(35, 35, 77);
+  }
+
+  .italy-bg{
+    background: rgb(224, 53, 53);
+  }
+
+  .france-bg{
+    background: rgb(32, 32, 216);
+  }
+
+  .barb-bg{
+    background: yellow;
+  }
 
 
   .card-img .number{
@@ -207,7 +270,7 @@ width: 100%;
   }
 
   .card-content .info h2{
-    color:red ;
+    color:gray ;
     font-size: 2.3em;
     font-weight: 600;
     line-height: 50px;
