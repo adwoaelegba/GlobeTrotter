@@ -61,3 +61,57 @@ header .nav .nav-items a:hover:before{
 width: 100%;
 
 }
+
+.home{
+    padding:0 ;
+}
+
+.home .swiper-slide{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: cover !important;
+    background-position: center !important ;
+    min-height: 60rem;
+
+}
+
+.home .swiper-slide .content{
+    width: 85rem;
+
+}
+
+.home .swiper-slide .content span{
+    display: block;
+    font-size: 2.2rem;
+    color: white;
+    padding-bottom: 1rem;
+
+}
+
+.home .swiper-slide .content h3{
+    font-size: 6vw;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: 1rem;
+    padding: 1rem 0;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    background:black;
+    color: white;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+
+
+}
+
+.btn:hover{
+    background: #4C66E4;
+}
