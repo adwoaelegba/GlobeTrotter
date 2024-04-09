@@ -13,7 +13,7 @@
         <a href="#" class="brand">GlobeTrotter</a>
         <div class="nav">
             <div class="nav-items">
-                <a href="./view/home.html">Home</a>
+                <a href="../view/home.php">Home</a>
                 <a href="../view/destination.php">Destinations</a>
                 <a href="../view/book.php">Book trip</a>
                 <a href="../view/budget.php">Budget calculator</a>
