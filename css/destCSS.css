@@ -19,8 +19,17 @@ header{
     align-items: center;
     padding:15px 200px ;
     transition: 0.5s ease;
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s ease;
+    transition-property: transform, opacity;
 
 
+}
+
+header.hide{
+    transform: translateY(-30px);
+    opacity: 0;
 }
 
 header .brand{
@@ -123,7 +132,26 @@ width: 100%;
     align-items: center;
     margin-top: 380px;
   }
-  .swiper-slide-naija{
+
+  .swiper-slide-prev .card{
+    height: 225px;
+
+  }
+
+  .swiper-slide-active .card{
+    height: 260px;
+  }
+
+
+  .swiper-slide-next .card{
+    height: 295px;
+
+  }
+
+  
+
+
+ /* .swiper-slide-naija{
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -132,7 +160,7 @@ width: 100%;
     justify-content: center;
     align-items: center;
     margin-top: 380px;
-  }
+  }*/
 
   .slider-cont{
     z-index: 777;
@@ -179,6 +207,17 @@ width: 100%;
   .card:hover .mauritius{
     transform: translateY(-40px) scale(1.1);
   }
+  .card:hover .italy{
+    transform: translateY(-45px) scale(1.1);
+  }
+
+  .card:hover .france{
+    transform: translateY(-45px) scale(1.05);
+  }
+
+  .card:hover .barbados{
+    transform: translateY(-45px) scale(1.1);
+  }
 
   .ghana{
     width: 180px;
@@ -201,15 +240,29 @@ width: 100%;
   }
 
 
-  .france{
+  .italy{
+    width: 240px;
+    top:-95px ;
+    right:30px ;
 
   }
 
-  .italy{
+  .france{
+    width: 265px;
+    top: -125px;
+    right: 20px;
 
   }
 
   .barbados{
+    width: 320px;
+    height: -95px;
+    right: 30px;
+
+  }
+
+  .ghana-bg{
+    background:  rgb(202, 53, 53);
 
   }
 
@@ -325,5 +378,151 @@ width: 100%;
 
   }
 
+.modal-container{
+    z-index: 999;
+    position: absolute;
+    top:0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
 
+/*.modal-box{
+    position: absolute;
+    width: 90%;
+    height: 85%;
+    border-radius: 50px;
+    transform: translateY(15px);
+}*/
+.modal-box {
+    /* Adjust positioning to center the modal */
+    position: relative;
+    width: 90%;
+    max-width: 800px; /* Set a max-width for responsiveness */
+    height: auto; /* Change from fixed height to auto */
+    border-radius: 20px;
+    padding: 20px; /* Add some padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.modal-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.modal-img{
+    width: 300px;
+
+}
+
+.modal-close-btn{
+    position: absolute;
+    top: -40px;
+    right: 50px;
+    color: black;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.modal-close-btn i{
+    font-size: 1.3em;
+}
+
+.modal-close-btn span{
+    font-size: 1.1em;
+}
+
+.modal-inner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    gap: 35px;
+    padding: 0 35px;
+
+}
+
+/*.modal-bg-title{
+    position: absolute;
+    width: 335px;
+    color: gray;
+    font-size: 5em;
+    font-weight: 800;
+    opacity: 0.15;
+    top: 50%;
+    left: 125px;
+    transform: rotate(-90deg) translateY(-50px);
+}*/
+
+.modal-bg-title{
+    position: absolute;
+    width: 335px;
+    color: white;
+    font-size: 5em;
+    font-weight: 800;
+    top: 50%;
+    left: 320px;
+}
+
+.modal-image-area{
+    transform:translateY(-35px) ;
+
+}
+
+
+.modal-text-content{
+    position: relative;
+    max-height: 70vh;
+    overflow: hidden;
+    overflow-y: initial !important;
+    margin: auto 0;
+    padding-right:15px ;
+}
+
+.modal-title{
+    color: black;
+    font-size: 3em;
+    font-weight:600 ;
+
+}
+.modal-title-sub{
+    display: flex;
+    transform: translateY(-6px);
+    margin-bottom: 12px;
+
+}
+
+.modal-title-sub span{
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+
+.modal-title-sub h4{
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+
+}
+
+.modal-text-content p{
+    color:white ;
+    font-size: 1em;
+    font-weight: 300;
+    max-width: 500px;
+
+}
   
