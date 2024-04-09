@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 09, 2024 at 12:51 PM
+-- Generation Time: Apr 09, 2024 at 02:52 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -31,13 +31,13 @@ CREATE TABLE `book_trip` (
   `book_id` int(11) NOT NULL,
   `pid` int(11) NOT NULL,
   `dest_id` int(11) NOT NULL,
-  `travel_date` date NOT NULL DEFAULT current_timestamp(),
+  `travel_date` int(11) NOT NULL,
   `duration` int(11) NOT NULL,
-  `payment_type` varchar(50) NOT NULL,
+  `payment` int(11) NOT NULL,
   `card_num` int(11) NOT NULL,
-  `first_name` varchar(100) NOT NULL,
-  `last_name` varchar(100) NOT NULL,
-  `email` varchar(50) NOT NULL,
+  `first_name` int(11) NOT NULL,
+  `last_name` int(11) NOT NULL,
+  `email` int(11) NOT NULL,
   `phone_num` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -49,11 +49,11 @@ CREATE TABLE `book_trip` (
 
 CREATE TABLE `destination` (
   `dest_id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
+  `dest_name` varchar(100) NOT NULL,
   `continent` varchar(50) NOT NULL,
   `info` text NOT NULL,
   `flight_price` decimal(10,0) NOT NULL,
-  `hotel_price` int(11) NOT NULL,
+  `hotel_price` decimal(10,0) NOT NULL,
   `tour_price` decimal(10,0) NOT NULL,
   `souvenir_price` decimal(10,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -68,6 +68,8 @@ CREATE TABLE `users` (
   `pid` int(11) NOT NULL,
   `first_name` varchar(100) NOT NULL,
   `last_name` varchar(100) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `phone_num` int(11) NOT NULL,
   `country` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

@@ -1,3 +1,15 @@
+<?php
+include("../ajax/script.php");
+include("../actions/login_user_action.php");
+if(isset($_SESSION["pid"])){
+    header("Location: ../view/home.php");
+}
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,17 +31,18 @@
 
 <div class="form">
     <!--log in form  -->
-    <form action="#" class="login-form" method="post">
+    <form autocomplete="off" action="#" class="login-form" method="post">
     <i class="fa-solid fa-circle-user"></i>
-    <input type="text" name="email" class="user-input" placeholder="Email">
-    <input type="password" name="password" class="user-input" placeholder="Password">
+    <input type="hidden" id="action" value="login">
+    <input type="text" name="email" id="Lemail" class="user-input" placeholder="Email">
+    <input type="password" name="password" id="Lpassword" class="user-input" placeholder="Password">
     
     <div class="options-1">
-        <label class="remember"><input type="checkbox" name="">Remember me</label>
+        <label class="remember"><input type="checkbox">Remember me</label>
         <a href="#">Forgot password</a>
 
     </div>
-    <button class="button" type="submit">Log In</button>
+    <button class="button" type="button"  onclick="submitData();">Log In</button>
     <div class="options-2">
         <p>Not registered? <a href="#">Create an account</a></p>
     </div>
@@ -37,14 +50,16 @@
 
 <!--form end -->
 <!--sign in -->
-<form class="sign-up" action="" method="post">
+<form autocomplete="off" class="sign-up" action="" method="post">
 <i class="fa-solid fa-user-plus"></i>
-<input class="user-input" type="text" name="firstName" placeholder="First Name">
-<input class="user-input" type="text" name="lastName" placeholder="Last Name">
-<input class="user-input" type="text" name="country" placeholder="Country">
-<input class="user-input" type="text" name="password" placeholder="Password">
-<input class="user-input" type="text" name="cpassword" placeholder="Confirm password">
-<button class="button" type="submit">Sign up</button>
+<input class="user-input" type="text" name="firstName" id="firstName" placeholder="First Name">
+<input class="user-input" type="text" name="lastName"  id="lastName"  placeholder="Last Name">
+<input class="user-input" type="email" name="email"  id="email" placeholder="Email">
+<input class="user-input" type="text" name="phone" id="phone" placeholder="Phone">
+<input class="user-input" type="text" name="country" id="country" placeholder="Country">
+<input class="user-input" type="password" name="password" id="password" placeholder="Password">
+<input class="user-input" type="password" name="cpassword" placeholder="Confirm password">
+<button class="button" type="button" onclick="submitInfo('insert');">Sign up</button>
 
 <div class="options-2">
     <p>Already Registered? <a href="#">Sign In</a></p>
