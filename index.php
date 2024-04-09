@@ -13,10 +13,10 @@
         <a href="#" class="brand">GlobeTrotter</a>
         <div class="nav">
             <div class="nav-items">
-                <a href="./view/home.php">Home</a>
-                <a href="#">Destinations</a>
-                <a href="#">Book trip</a>
-                <a href="#">Budget calculator</a>
+                <a href="./login/login.php">Home</a>
+                <a href="./login/login.php">Destinations</a>
+                <a href="./login/login.php">Book trip</a>
+                <a href="./login/login.php">Budget calculator</a>
             </div>
 
         </div>
