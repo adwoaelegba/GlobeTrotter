@@ -21,8 +21,8 @@ function login(){
   
     $password=$_POST["password"];
 
-    var_dump($email);
-    var_dump( $password);
+    //var_dump($email);
+    //var_dump( $password);
 
     
 
@@ -37,10 +37,14 @@ function login(){
 
     if ($user && password_verify($_POST['password'], $user['password'])) {
         // Password is correct
-        echo 'Login successful';
+        //echo 'Login successful';
         //starting session using user and role id
         $_SESSION['login']= true;
         $_SESSION['pid']=$user['pid'];
+
+        header('Location: ../view/home.php');
+        exit();
+      
     
     } else {
         // Password is incorrect or user not found

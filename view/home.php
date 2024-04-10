@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +26,7 @@
                 <a href="../view/destination.php">Destinations</a>
                 <a href="../view/book.php">Book trip</a>
                 <a href="../view/budget.php">Budget calculator</a>
-                <a href="#">Log Out</a>
+                <a href="../login/logout.php">Log Out</a>
             </div>
 
         </div>

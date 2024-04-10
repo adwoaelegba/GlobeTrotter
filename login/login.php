@@ -3,7 +3,7 @@ include("../ajax/script.php");
 include("../actions/login_user_action.php");
 if(isset($_SESSION["pid"])){
     header("Location: ../view/home.php");
-    exit;
+   exit;
 }
 ?>
 
