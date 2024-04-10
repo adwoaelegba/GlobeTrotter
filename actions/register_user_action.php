@@ -14,6 +14,17 @@ if(isset($_POST["action"])){
 function insert(){
     global $con;
 
+   
+
+    //$insert = "INSERT INTO users VALUES ('' , '$firstName' , '$lastName', ' $email', '$phone',' $country', '$passhash')";
+    //mysqli_query($con, $insert);
+    //echo "Inserted successfully";
+
+    $insert =  "INSERT INTO users (first_name, last_name, email, phone_num, country, password) VALUES (?, ?, ?, ?, ?, ?)";
+    $stmt = $con->prepare($insert);
+
+    $stmt->bind_param("sssiss", $firstName, $lastName, $email, $phone, $country, $passhash);
+
     $firstName = $_POST["firstName"];
     $lastName = $_POST["lastName"];
     $email=$_POST["email"];
@@ -22,10 +33,16 @@ function insert(){
     $password = $_POST["password"];
     $passhash = password_hash($password, PASSWORD_DEFAULT);
 
+    if ($stmt->execute()) {
+        echo 'Register';
+        
+    } else {
+        //echo 'Registration failed';
+    }
 
-    $insert = "INSERT INTO users VALUES ('' , '$firstName' , '$lastName', ' $email', '$phone',' $country', '$passhash')";
-    mysqli_query($con, $insert);
-    echo "Inserted successfully";
+    $stmt->close();
+
+
 
 }
 

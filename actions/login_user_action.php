@@ -1,8 +1,9 @@
 <?php
 
+session_start();
 include("../settings/connection.php");
 
-session_start();
+
 
 if (isset($_POST["action"])){
     if($_POST["action"] == "login"){
@@ -12,34 +13,49 @@ if (isset($_POST["action"])){
 
 
 
+
 function login(){
     global $con;
 
     $email= $_POST["email"];
+  
     $password=$_POST["password"];
 
-    $user= mysqli_query($con, "SELECT * FROM users WHERE email='$email'");
+    var_dump($email);
+    var_dump( $password);
 
-    if(mysqli_num_rows($user) > 0){
-        $row=mysqli_fetch_assoc($user);
-        if($password == $row["password"]){
-            echo "Login successful";
-            $_SESSION["login"] = true;
-            $_SESSION["pid"]= $row['pid'];
+    
 
-        }
-        else{
-            echo "Wrong password";
-           
-        }
+    
+    $emailquery= "SELECT * FROM users WHERE email = ?";
+    $person=$con->prepare($emailquery);
+    $person->bind_param("s",$email);
+    $person->execute();
+    $result = $person->get_result();
+    $user = $result->fetch_assoc();
+    $person->close();
 
+    if ($user && password_verify($_POST['password'], $user['password'])) {
+        // Password is correct
+        echo 'Login successful';
+        //starting session using user and role id
+        $_SESSION['login']= true;
+        $_SESSION['pid']=$user['pid'];
+    
+    } else {
+        // Password is incorrect or user not found
+        echo 'Login failed';
     }
 
-    else{
-        echo "User not found";
-    }
 
+    
+    
 }
+
+   
+
+
+
 
 
 

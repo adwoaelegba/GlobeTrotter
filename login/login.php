@@ -3,6 +3,7 @@ include("../ajax/script.php");
 include("../actions/login_user_action.php");
 if(isset($_SESSION["pid"])){
     header("Location: ../view/home.php");
+    exit;
 }
 ?>
 
@@ -34,8 +35,8 @@ if(isset($_SESSION["pid"])){
     <form autocomplete="off" action="#" class="login-form" method="post">
     <i class="fa-solid fa-circle-user"></i>
     <input type="hidden" id="action" value="login">
-    <input type="text" name="email" id="Lemail" class="user-input" placeholder="Email">
-    <input type="password" name="password" id="Lpassword" class="user-input" placeholder="Password">
+    <input type="text" name="email" id="email" class="user-input" placeholder="Email">
+    <input type="password" name="password" id="password" class="user-input" placeholder="Password">
     
     <div class="options-1">
         <label class="remember"><input type="checkbox">Remember me</label>
@@ -48,26 +49,7 @@ if(isset($_SESSION["pid"])){
     </div>
 </form>
 
-<!--form end -->
-<!--sign in -->
-<form autocomplete="off" class="sign-up" action="" method="post">
-<i class="fa-solid fa-user-plus"></i>
-<input class="user-input" type="text" name="firstName" id="firstName" placeholder="First Name">
-<input class="user-input" type="text" name="lastName"  id="lastName"  placeholder="Last Name">
-<input class="user-input" type="email" name="email"  id="email" placeholder="Email">
-<input class="user-input" type="text" name="phone" id="phone" placeholder="Phone">
-<input class="user-input" type="text" name="country" id="country" placeholder="Country">
-<input class="user-input" type="password" name="password" id="password" placeholder="Password">
-<input class="user-input" type="password" name="cpassword" placeholder="Confirm password">
-<button class="button" type="button" onclick="submitInfo('insert');">Sign up</button>
 
-<div class="options-2">
-    <p>Already Registered? <a href="#">Sign In</a></p>
-
-</div>
-</form>
-
-</div>
 
 <script type="text/javascript">
 $('.options-2 a').click(function(){

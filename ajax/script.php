@@ -33,12 +33,13 @@ function submitInfo(action){
 
 
 
-function submitData(){
+function submitData( action){
     $(document).ready(function(){
         var data ={
-            email:$('#Lemail').val(),
-            password:$('#Lpassword').val(),
-            action: $('#action').val(),
+            action:$('#action').val(),
+            email:$('#email').val(),
+            password:$('#password').val(),
+            
         };
 
         $.ajax({
@@ -48,7 +49,7 @@ function submitData(){
             success:function(response){
                 alert(response);
                 if(response == "Login successful"){
-                    window.location.href="../view/home.php";
+                    window.location.reload();
                 }
 
             }
