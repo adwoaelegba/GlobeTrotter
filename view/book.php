@@ -1,3 +1,10 @@
+<?php
+session_start();
+include("../ajax/script.php");
+include("../actions/book_trip_action.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +24,7 @@
                 <a href="../view/destination.php">Destinations</a>
                 <a href="../view/book.php">Book trip</a>
                 <a href="../view/budget.php">Budget calculator</a>
-                <a href="#">Log out</a>
+                <a href="../login/logout.php">Log out</a>
             </div>
 
         </div>
@@ -41,29 +48,29 @@
                     <div class="field">
                         <div class="input">
                             <label>Destination</label>
-                            <input type="text" name="destination" placeholder="Enter Your Destination">
+                            <input type="text" name="destination" id="destination" placeholder="Enter Your Destination">
                         </div>
                         <div class="input">
                             <label>Travel Date</label>
-                            <input type="date" name="date">
+                            <input type="date" id="date" name="date">
                         </div>
                         <div class="input">
                             <label>Duration</label>
-                            <input type="number" name="duration" placeholder="E.g 3">
+                            <input type="number" name="duration" id="duration" placeholder="E.g 3">
                         </div>
-                        <div class="input">
+                        <!--<div class="input">
                             <label>Package</label>
                             <input type="text" name="package" placeholder="E.g Deluxe">
-                        </div>
+                        </div>-->
 
                         <!--second-line-->
                         <div class="input">
                             <label>Payment Method</label>
-                            <input type="text" name="payment" placeholder="Eg Visa,Mastercard">
+                            <input type="text" name="payment" id="payment" placeholder="Eg Visa,Mastercard">
                         </div>
                         <div class="input">
                             <label>Card Number</label>
-                            <input type="text" name="card" placeholder="Enter Your Card Number">
+                            <input type="text" name="card" id="card" placeholder="Enter Your Card Number">
                         </div>
                         
                     </div>
@@ -73,19 +80,19 @@
                     <div class="field">
                         <div class="input">
                             <label>First Name</label>
-                            <input type="text" name="firstName" placeholder="Enter Your First Name">
+                            <input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name">
                         </div>
                         <div class="input">
                             <label>Last Name</label>
-                            <input type="text" name="lastName" placeholder="Enter Your Last Name">
+                            <input type="text" name="lastName" id="lastName" placeholder="Enter Your Last Name">
                         </div>
                         <div class="input">
                             <label>Email</label>
-                            <input type="text" name="email" placeholder="Enter Your Email">
+                            <input type="text" name="email" id="email" placeholder="Enter Your Email">
                         </div>
                         <div class="input">
                             <label>Phone Number</label>
-                            <input type="text"  name="number" placeholder="Enter Your Phone Number" >
+                            <input type="text"  name="phone" id="phone" placeholder="Enter Your Phone Number" >
                         </div>
                         
 
@@ -93,7 +100,7 @@
                         
                     </div>
                     <div class="btn">
-                        <button type="submit" class="sub-btn" name="book">Book</button>
+                        <button type="submit" class="sub-btn" name="book" id="book" onclick="bookTrip('book');">Book</button>
                         <button type="submit" class="sub-btn" name="receive">Receive Email</button>
 
                         </div>

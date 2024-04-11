@@ -1,4 +1,6 @@
 <?php
+
+session_start();
 include("../ajax/script.php");
 include("../actions/login_user_action.php");
 if(isset($_SESSION["pid"])){

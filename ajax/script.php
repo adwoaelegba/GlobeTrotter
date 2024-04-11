@@ -59,4 +59,37 @@ function submitData( action){
    
 }
 
+function bookTrip(action){
+    $(document).ready(function(){
+        var info= {
+            action:action,
+            destination:$("#destination").val(),
+            date:$("#date").val(),
+            duration:$("#duration").val(),
+            payment:$("#payment").val(),
+            card:$("#card").val(),
+            firstName:$("#firstName").val(),
+            lastName:$("#lastName").val(),
+            email:$("#email").val(),
+            phone:$("#phone").val(),
+           
+            
+        };
+
+        $.ajax({
+            url: '../actions/book_trip_action.php',
+            type: 'post',
+            data:info,
+            success:function(response){
+                alert(response);
+            }
+
+        })
+    }
+)
+}
+
+
+
+
 </script>
