@@ -31,8 +31,9 @@
         <div class="block">
             <div class="search">
                 <span>View the destinations we offer</span>
-                <input type="text" class="search-bar" placeholder="Search for destination">
+                <input type="text" class="search-bar" id="search-bar" placeholder="Search for destination">
             </div>
+            <div class="search-result" id="search-result">
 
         </div>
 
@@ -50,7 +51,7 @@
                 <h3>Ghana</h3>
                 <p> Picture vibrant markets where the air hums with the rhythm of drums.
                      The aroma of spicy jollof rice dances through narrow alleys, and the sun sets over palm-fringed beaches, casting golden hues on the horizon. Ghana, where history whispers in the rustling leaves of ancient baobab trees, beckons you to explore its rich past and vibrant present. Feel the heartbeat of Accra, taste the warmth of Ghanaian hospitality, and let the vibrant kente cloth wrap you in its kaleidoscope of colors.</p>
-                <button class="btn">Learn More</button>
+                <button class="btn" onclick="togglePop()">Learn More</button>
             </div>
         </div>
         <!--second-->
@@ -196,9 +197,66 @@
         </div>
     </div>
 
+    <div class="popup" id="popup">
+        <div class="overlay"></div>
+        <div class="info">
+            <div class="close-btn" onclick="togglePop()">&times;</div>
+            <h1>Travel Info</h1>
+            <p><strong>Flight costs:</strong> $1450</p>
+            <p><strong>Accomodation costs:</strong> $3500 (for 4 nights)</p>
+            <p><strong>Tour costs:</strong> $150</p>
+            <p><strong>Souvenir price:</strong> $200</p>
+        </div>
+
     </div>
 
+    
 
+    <!--end of popup-->
+
+   
+
+    </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <!--Modal code-->
+    <script>
+
+        function togglePop() {
+            document.getElementById('popup').classList.toggle("active");
+        }
+    </script>
+
+    <!--Live search-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#search-bar').keyup(function(){
+                var entry = $(this).val();
+                //alert(entry);
+
+                //if not empty
+                if(entry!= " "){
+                    $.ajax({
+                        url:'../actions/search.php',
+                        method:'post',
+                        data:{entry:entry},
+
+                        success:function(data){
+                            $('#search-result').html(data);
+                            $('#search-result').css("display", "block"); 
+                        }
+                    });
+                }else{
+                    $('#search-result').css("display", "none");
+                    
+                }
+            });
+        });
+    </script>
 
 
 
