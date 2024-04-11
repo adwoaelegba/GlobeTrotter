@@ -46,7 +46,7 @@ session_start();
 
     <div class="content">
 <span>Explore The World</span>
-<h3>We currently have some countries in each continent and division in our portfolio that we cater to.Check out which ones</h3>
+<h3>We have a small but diverse group of countries we organise trips to. Check them out</h3>
 <a href="../view/destination.php" class="btn">Learn more</a>
     </div>
 
@@ -66,9 +66,9 @@ session_start();
 <div class="swiper-slide" style="background: url(../images/boat.jpeg) no-repeat;">
 
 <div class="content">
-<span>Packages For Everyone</span>
-<h3>We offer packages to everyone, regardless of budget. You don't have to break the bank to travel with us</h3>
-<a href="../view/package.php" class="btn">Learn more</a>
+<span>Manage Your Trip</span>
+<h3>Get an overview of your trips, including countdowns. Cancel and rebook trips-all in one place</h3>
+<a href="../view/trip.php" class="btn">Learn more</a>
 </div>
 
 </div>

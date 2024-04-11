@@ -33,10 +33,9 @@ include("../actions/book_trip_action.php");
     <section class="main">
     <div class="cont">
         <div class="image-overlay">
-            <img src="../images/temple.jpg" alt="Image">
             <div class="text-overlay">Book Trip</div>
         </div>
-    </div>
+   
 
     <!--form-->
     <div class="container">
@@ -58,10 +57,7 @@ include("../actions/book_trip_action.php");
                             <label>Duration</label>
                             <input type="number" name="duration" id="duration" placeholder="E.g 3">
                         </div>
-                        <!--<div class="input">
-                            <label>Package</label>
-                            <input type="text" name="package" placeholder="E.g Deluxe">
-                        </div>-->
+                      
 
                         <!--second-line-->
                         <div class="input">
@@ -111,7 +107,7 @@ include("../actions/book_trip_action.php");
 
     </div>
     
-
+    </div>
     </section>
 </body>
 </html>

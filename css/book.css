@@ -62,79 +62,100 @@ width: 100%;
 
 }
 
+body{
+    background: url("../images/temple.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
 .main{
     position: relative;
+    height: 100vh;
 }
 
 
 .cont {
-    width: 100%; /* Adjust width according to your layout */
-    margin: 0 auto; /* Center the container*/ 
-    height: 950px;
+    width: 100%; 
+    margin: 0 auto; 
+    height: 100%;
+    display: flex;
+     justify-content: center;
+      align-items: center;
     margin-right: 750px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .image-overlay {
-    position: relative;
-}
-
-.image-overlay img {
-    width: 100%; /* Make sure the image takes the full width of its container */
-    display: block;
-    height: 100;
-    background-color: rgba(0, 0, 0, 0.5); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
 }
 
 
 
 .text-overlay {
-    position: absolute;
-    top: 40%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity */
-    color: white; /* Text color */
-    padding: 20px; /* Adjust padding */
-    font-size: 160px; /* Adjust font size */
+    color: white; 
+    padding: 20px; 
+    font-size: 160px; 
+    z-index: 1;
 }
 
 
 
 .container{
-   position: relative;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    margin-top: 500px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    border-radius: 10px;
+    padding: 3px;
+    margin-top: 20px;
+    margin: 0 auto; /* Center the container horizontally */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+   /*position: relative;
     max-width: 900px;
     width: 100%;
     background-color: white;
     border-radius: 10px;
     padding: 3px;
     margin: 0 15px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5) ;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5) ;*/
 }
 
 .container h1{
     font-size: 40px;
     font-weight: 600;
     color: black;
+    text-align: center; /* Center the heading */
+    margin-top: 20px;
+    z-index: 0; /* Adjust spacing */
+  /*  font-size: 40px;
+    font-weight: 600;
+    color: black;*/
 }
 
-.container h1::before{
+
+.container h1::before {
     content: "";
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom: -2px;
+    transform: translateX(-50%);
     height: 3px;
     width: 27px;
     border-radius: 8px;
-    background-color: rgb(103, 103, 190) ;
-
+    background-color: rgb(103, 103, 190);
 }
 
-.container form{
+.container form {
     position: relative;
     min-height: 490px;
-    background-color: lightgray;
-    margin-top: 16px;
+    background-color: transparent; /* Transparent background */
+    margin-top: 20px; /* Adjust spacing */
+    padding: 20px; /* Add padding */
 }
 
 .container form .personal{
@@ -215,6 +236,27 @@ form .field .input{
     background: rgb(145, 145, 192);
 }
 
+/*.container h1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: rgb(103, 103, 190) ;
+
+}
+
+.container form{
+    position: relative;
+    min-height: 490px;
+    background-color: lightgray;
+    margin-top: 16px;
+}
+/*
+
+*/
 
 
 

@@ -23,7 +23,7 @@ if(isset($_POST["action"])){
 
 function book(){
     global $con;
-    $dest_id =11;
+    $dest_name=$_POST["destination"];
     $travel_date = $_POST["date"];
     $duration=$_POST["duration"];
     $payment=$_POST["payment"];
@@ -58,6 +58,18 @@ function book(){
   if ($taskResult->num_rows > 0) {
      $row = $taskResult->fetch_assoc();
       $pid = $row['pid'];
+     
+  }
+
+  $countryQuery = "SELECT dest_id FROM destination WHERE dest_name = ?";
+    $stmt_select = $con->prepare($countryQuery);
+  $stmt_select->bind_param("s", $dest_name);
+  $stmt_select->execute();
+  $taskResult = $stmt_select->get_result();
+  
+  if ($taskResult->num_rows > 0) {
+     $row = $taskResult->fetch_assoc();
+      $dest_id = $row['dest_id'];
      
   }
 
