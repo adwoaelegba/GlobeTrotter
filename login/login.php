@@ -52,6 +52,23 @@ include("../actions/login_user_action.php");
     </div>
 </form>
 
+<form autocomplete="off" class="sign-up" action="" method="post">
+<i class="fa-solid fa-user-plus"></i>
+<input class="user-input" type="text" name="firstName" id="firstName" placeholder="First Name">
+<input class="user-input" type="text" name="lastName"  id="lastName"  placeholder="Last Name">
+<input class="user-input" type="email" name="email"  id="email" placeholder="Email">
+<input class="user-input" type="text" name="phone" id="phone" placeholder="Phone">
+<input class="user-input" type="text" name="country" id="country" placeholder="Country">
+<input class="user-input" type="password" name="password" id="password" placeholder="Password">
+<input class="user-input" type="password" name="cpassword" placeholder="Confirm password">
+<button class="button" type="button" onclick="submitInfo('insert');">Sign up</button>
+
+<div class="options-2">
+    <p>Already Registered? <a href="#">Sign In</a></p>
+
+</div>
+</form>
+
 
 
 <script type="text/javascript">
