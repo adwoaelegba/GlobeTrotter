@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+error_reporting(E_ALL); ini_set('display_errors', 1);
 include("../settings/connection.php");
 
 
@@ -21,8 +21,7 @@ function login(){
   
     $password=$_POST["password"];
 
-    //var_dump($email);
-    //var_dump( $password);
+    
 
     
 
@@ -36,14 +35,18 @@ function login(){
     $person->close();
 
     if ($user && password_verify($_POST['password'], $user['password'])) {
-        // Password is correct
-        //echo 'Login successful';
-        //starting session using user and role id
+      
+        
+        
         $_SESSION['login']= true;
         $_SESSION['pid']=$user['pid'];
 
+        echo 'Login successful';
+
         header('Location: ../view/home.php');
         exit();
+
+        
       
     
     } else {

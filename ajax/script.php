@@ -49,7 +49,9 @@ function submitData( action){
             success:function(response){
                 alert(response);
                 if(response == "Login successful"){
-                    window.location.reload();
+                    //window.location.reload();
+                    window.location.href = "../view/home.php";
+
                 }
 
             }

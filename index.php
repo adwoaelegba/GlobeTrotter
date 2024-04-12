@@ -13,10 +13,10 @@
         <a href="#" class="brand">GlobeTrotter</a>
         <div class="nav">
             <div class="nav-items">
-                <a href="./login/login.php">Home</a>
-                <a href="./login/login.php">Destinations</a>
+                <a href="./login/login.php">Log In</a>
+                <!--<a href="./login/login.php">Destinations</a>
                 <a href="./login/login.php">Book trip</a>
-                <a href="./login/login.php">Budget calculator</a>
+                <a href="./login/login.php">Budget calculator</a>-->
             </div>
 
         </div>
@@ -31,8 +31,10 @@
         <div class="info">
             <h1>Start <br> <span>Exploring</span></h1>
             <p>Looking for a travel company that can make travelling the world easier and without hassle. Look no further than GlobeTrotter. We organise trips of all nature-be it honeymoons,girls trips, friend hangouts-to over 10 different countries. Ready to start exploring? Log in now </p>
-           <a href="/login/login.php">Log In </a>
             </div>
+
+
+            
 
 
 

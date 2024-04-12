@@ -3,10 +3,10 @@
 session_start();
 include("../ajax/script.php");
 include("../actions/login_user_action.php");
-if(isset($_SESSION["pid"])){
-    header("Location: ../view/home.php");
-   exit;
-}
+//if(isset($_SESSION["pid"])){
+   // header("Location: ../view/home.php");
+   //exit;
+//}
 ?>
 
 
@@ -34,7 +34,7 @@ if(isset($_SESSION["pid"])){
 
 <div class="form">
     <!--log in form  -->
-    <form autocomplete="off" action="#" class="login-form" method="post">
+    <form autocomplete="off"  class="login-form" method="post">
     <i class="fa-solid fa-circle-user"></i>
     <input type="hidden" id="action" value="login">
     <input type="text" name="email" id="email" class="user-input" placeholder="Email">
