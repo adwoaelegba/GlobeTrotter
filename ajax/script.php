@@ -92,6 +92,42 @@ function bookTrip(action){
 }
 
 
+function calculateCost(action){
+    $(document).ready(function(){
+        var info= {
+            action:action,
+            destination:$("#number").val(),
+            duration:$("#dur").val(),
+        };
+
+        $.ajax({
+            url: '../actions/get_prices_action.php',
+            type: 'post',
+            data:info,
+            success:function(response){
+                alert(response);
+                document.getElementById("display").innerText= 'Your total cost is: '+ response;
+            }
+        })
+
+    })
+   
+ }
+    
+ //$.ajax({
+           // url:'../actions/get_prices_action.php',
+            //type:'post',
+            //data:data,
+            //success:function(response){
+                //document.getElementById("display").innerText= 'Your total cost is: '+ response;
+            //}
+
+
+
+
+
+
+
 
 
 </script>

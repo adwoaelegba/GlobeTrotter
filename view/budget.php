@@ -1,10 +1,18 @@
+<?php
+//include("../functions/budgetFunctions.php");
+include("../ajax/script.php");
+include("../actions/get_prices_action.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlobeTrotter-Budget</title>
-    <link rel="stylesheet" href="../css/budget.css">
+    <!--<link rel="stylesheet" href="../css/budget.css">-->
     <!-- Font Awesome CDN link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
@@ -26,14 +34,30 @@
 <h1 class="title">Budget Calculator</h1>
     <div class="container">
     <h2 class="heading">Calculate your expenses</h2>
-      <form action="#">
-            <input type="text" name="budget" id="budget" placeholder="Enter your budget"  pattern="[0-9]+" title="Please enter numbers only">
-            <button type="sub" class="enter-btn"  onclick="compareValues()">Enter</button>
-        </form>
-        <button class="btn">Show Calculator</button>
+
+
+    <form>
+
+    <input type="text" id="number" name="number" placeholder="Enter Number">
+    <input type="text" id="dur" name="dur" placeholder="Enter duration">
+    <button type="submit" class="sub-btn" name="price" id="price" onclick="calculateCost('price');">Calculate</button>
+
+    </form>
+      <!--<form >
+        <label for="countryDrop">Choose country</label>
+       
+        
+            <input type="number" name="duration" id="duration" placeholder="Enter your duration">
+            <button type="button" class="enter-btn"  onclick="calculateCost('price');">Calculate Cost</button>
+        </form>-->
+
+        
+
     
 </div>
- <div id="content">
+
+<div id="display"></div>
+<!--<div id="content">
     <div class="calculator">
         <input type="text" placeholder="0" class="entry" id="output">
         <button class="calcBtn" onclick="Clear()">CL</button>
@@ -131,7 +155,7 @@ function compareValues() {
 }
 
 </script>
-
+-->
 
     
 </body>

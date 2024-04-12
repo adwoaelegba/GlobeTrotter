@@ -51,7 +51,12 @@
                 <h3>Ghana</h3>
                 <p> Picture vibrant markets where the air hums with the rhythm of drums.
                      The aroma of spicy jollof rice dances through narrow alleys, and the sun sets over palm-fringed beaches, casting golden hues on the horizon. Ghana, where history whispers in the rustling leaves of ancient baobab trees, beckons you to explore its rich past and vibrant present. Feel the heartbeat of Accra, taste the warmth of Ghanaian hospitality, and let the vibrant kente cloth wrap you in its kaleidoscope of colors.</p>
-                <button class="btn" onclick="togglePop()">Learn More</button>
+                     <p><strong>Flight costs:</strong> $1450</p>
+            <p><strong>Accomodation costs:</strong> $3500 per night</p>
+            <p><strong>Tour costs:</strong> $150</p>
+            <p><strong>Souvenir price:</strong> $200</p>
+                
+                   
             </div>
         </div>
         <!--second-->
@@ -63,7 +68,12 @@
                 <p> Close your eyes and imagine the rhythmic beat of sabar drums echoing across the bustling streets of Dakar. Senegal, where vibrant murals adorn the walls, and the scent of thieboudienne (a mouthwatering fish stew) lingers in the air.
                      Here, the Teranga spirit—meaning “hospitality”—welcomes you with open arms. 
                      Explore the vibrant markets, sway to the sounds of mbalax music, and let the vibrant colors of Senegalese fashion ignite your soul.</p>
-                <button class="btn">Learn More</button>
+                     <p><strong>Flight costs:</strong> $2000</p>
+            <p><strong>Accomodation costs:</strong> $2000 per night</p>
+            <p><strong>Tour costs:</strong> $150</p>
+            <p><strong>Souvenir price:</strong> $400</p>
+                
+                     
             </div>
         </div>
         <!--third-->
@@ -74,7 +84,11 @@
                 <p> The winding alleys of Marrakech beckon—a labyrinth of secrets waiting to be unraveled.
                      Imagine sipping mint tea in a riad courtyard, surrounded by intricate zellige tiles and the fragrance of orange blossoms.
                       Morocco, where the Atlas Mountains cradle ancient cities, invites you to lose yourself in the medina’s kaleidoscope of spices, textiles, and whispered tales of desert caravans. Let the call to prayer guide you through the maze, and discover magic at every turn. </p>
-                <button class="btn">Learn More</button>
+                      <p><strong>Flight costs:</strong> $2300</p>
+            <p><strong>Accomodation costs:</strong> $1500 per night</p>
+            <p><strong>Tour costs:</strong> $530</p>
+            <p><strong>Souvenir price:</strong> $140</p>
+                     
             </div>
         </div>
     </div>
@@ -91,7 +105,11 @@
                 <p>Neon-lit streets of Tokyo pulse with energy, blending tradition and modernity. Cherry blossoms paint the landscape in delicate hues, while futuristic bullet trains whisk you away to ancient temples. 
                     Japan, where sushi is an art form and tea ceremonies are timeless rituals, invites you to bow to Mount Fuji’s majesty and soak in onsen hot springs. 
                     Embrace the harmony of wabi-sabi aesthetics and the thrill of karaoke nights—it’s a symphony of contrasts that will leave you breathless</p>
-                <button class="btn">Learn More</button>
+                    <p><strong>Flight costs:</strong> $4000</p>
+            <p><strong>Accomodation costs:</strong> $3765 per night</p>
+            <p><strong>Tour costs:</strong> $800</p>
+            <p><strong>Souvenir price:</strong> $1000</p>
+                    
             </div>
         </div>
         <!--second-->
@@ -103,7 +121,11 @@
                 <p> Istanbul, where continents collide, bridges East and West with whispers of empires past. 
                     Imagine stepping into the Hagia Sophia, its domes echoing centuries of prayers. Turkey, where bazaars overflow with colorful ceramics, spices, and carpets, invites you to sail the turquoise waters of the Aegean and marvel at Cappadocia’s fairy chimneys. 
                     Taste baklava, sip strong çay, and let the call of muezzins weave your story into the fabric of this ancient land.</p>
-                <button class="btn">Learn More</button>
+                    <p><strong>Flight costs:</strong> $4599</p>
+            <p><strong>Accomodation costs:</strong> $4333 per night</p>
+            <p><strong>Tour costs:</strong> $234</p>
+            <p><strong>Souvenir price:</strong> $567</p>
+                   
             </div>
         </div>
         <!--third-->
@@ -113,7 +135,11 @@
                 <h3>India</h3>
                 <p> Imagine bustling streets where sacred cows roam freely, their gentle eyes reflecting centuries of reverence. India’s vibrant cuisine dances on your taste buds—fiery curries, fragrant biryanis, and street food that ignites your senses.
                 Hold your breath atop the Chenab Bridge—the world’s highest rail bridge at 1,178 feet! Suspended over the Chenab River in Jammu, it’s a dizzying feat of engineering. </p>
-                <button class="btn">Learn More</button>
+                <p><strong>Flight costs:</strong> $3200</p>
+            <p><strong>Accomodation costs:</strong> $5200 per night</p>
+            <p><strong>Tour costs:</strong> $544</p>
+            <p><strong>Souvenir price:</strong> $22</p>
+              
             </div>
         </div>
     </div>
@@ -128,7 +154,11 @@
                 <h3>France</h3>
                 <p>Paris—the City of Light—where the Seine weaves stories of love and revolution. Imagine sipping wine at a sidewalk café, the Eiffel Tower winking in approval. France, where baguettes are an art form and châteaux dot the countryside, invites you to wander through lavender fields in Provence, taste Bordeaux’s velvety reds, and lose yourself in the Louvre’s masterpieces. 
                     Vive la France, where every cobblestone whispers poetry.</p>
-                <button class="btn">Learn More</button>
+                    <p><strong>Flight costs:</strong> $3300</p>
+            <p><strong>Accomodation costs:</strong> $2500 per night</p>
+            <p><strong>Tour costs:</strong> $490</p>
+            <p><strong>Souvenir price:</strong> $240</p>
+                    
             </div>
         </div>
         <!--second-->
@@ -140,7 +170,11 @@
                 <p> Imagine pristine alpine meadows, where cowbells serenade snow-capped peaks. 
                     Switzerland, where precision meets chocolate, invites you to ski down powdery slopes, cruise on pristine lakes, and savor fondue in cozy chalets. Zurich’s financial buzz contrasts with Lucerne’s medieval charm, and the Glacier Express weaves tales of epic landscapes. 
                     Breathe in the crisp air, and let the Swiss clockwork enchant you.</p>
-                <button class="btn">Learn More</button>
+                    <p><strong>Flight costs:</strong> $3200</p>
+            <p><strong>Accomodation costs:</strong> $1000 per night</p>
+            <p><strong>Tour costs:</strong> $390</p>
+            <p><strong>Souvenir price:</strong> $540</p>
+                  
             </div>
         </div>
         <!--third-->
@@ -151,7 +185,12 @@
                 <p>Flamenco rhythms echo through Andalusian courtyards, where orange trees sway in the breeze.
                      Spain, where tapas unfold like love letters, invites you to dance with passion in Seville, marvel at Gaudí’s whimsical architecture in Barcelona, and lose track of time in the Alhambra’s intricate gardens. 
                      From the sun-kissed beaches of Costa del Sol to the snow-capped peaks of the Sierra Nevada, Spain whispers, “Vive la vida.”  </p>
-                <button class="btn">Learn More</button>
+                     <p><strong>Flight costs:</strong> $1200</p>
+            <p><strong>Accomodation costs:</strong> $1730 per night</p>
+            <p><strong>Tour costs:</strong> $240</p>
+            <p><strong>Souvenir price:</strong> $390</p>
+               
+                    
             </div>
         </div>
     </div>
@@ -168,7 +207,11 @@
                 <p> Reggae beats sway palm trees, and turquoise waves kiss golden sands. 
                     Jamaica, where Bob Marley’s spirit dances in the air, invites you to dive into Blue Lagoon’s crystal-clear waters and hike through lush rainforests. 
                     Taste jerk chicken, feel the rhythm of steel drums, and let the warmth of Jamaican smiles melt your worries away. Mon, it’s irie vibes all the way!</p>
-                <button class="btn">Learn More</button>
+                    <p><strong>Flight costs:</strong> $6432</p>
+            <p><strong>Accomodation costs:</strong> $2000 per night</p>
+            <p><strong>Tour costs:</strong> $500</p>
+            <p><strong>Souvenir price:</strong> $100</p>
+                   
             </div>
         </div>
         <!--second-->
@@ -182,7 +225,11 @@
                      And oh, the chocolate! Indulge in St. Lucia’s rich cacao heritage—the island’s long love affair with chocolate dates back centuries.
 
                 </p>
-                <button class="btn">Learn More</button>
+                <p><strong>Flight costs:</strong> $5000</p>
+            <p><strong>Accomodation costs:</strong> $2780 per night</p>
+            <p><strong>Tour costs:</strong> $1030</p>
+            <p><strong>Souvenir price:</strong> $270</p>
+               
             </div>
         </div>
         <!--third-->
@@ -192,20 +239,21 @@
                 <h3>Barbados</h3>
                 <p> Imagine a sun-kissed paradise where turquoise waters gently kiss powdery white sands. Barbados, the “Helen of the West Indies,” is more than just beaches—it’s a symphony of flavors, history, and vibrant culture. 
                     Don’t miss the rare flying fish, served as the national dish in most restaurants.</p>
-                <button class="btn">Learn More</button>
+                    <p><strong>Flight costs:</strong> $4309</p>
+            <p><strong>Accomodation costs:</strong> $1245 per night</p>
+            <p><strong>Tour costs:</strong> $490</p>
+            <p><strong>Souvenir price:</strong> $310</p>
+                 
             </div>
         </div>
     </div>
 
-    <div class="popup" id="popup">
+    <div class="popup" id="popup-1">
         <div class="overlay"></div>
         <div class="info">
             <div class="close-btn" onclick="togglePop()">&times;</div>
             <h1>Travel Info</h1>
-            <p><strong>Flight costs:</strong> $1450</p>
-            <p><strong>Accomodation costs:</strong> $3500 (for 4 nights)</p>
-            <p><strong>Tour costs:</strong> $150</p>
-            <p><strong>Souvenir price:</strong> $200</p>
+            
         </div>
 
     </div>
@@ -226,7 +274,7 @@
     <!--Modal code-->
     <script>
 
-        function togglePop() {
+        function togglePop(popupID) {
             document.getElementById('popup').classList.toggle("active");
         }
     </script>
