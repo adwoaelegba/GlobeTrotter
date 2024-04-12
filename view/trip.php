@@ -1,3 +1,10 @@
+<?php
+include("../settings/connection.php");
+include("../functions/trip_table.php");
+include("../ajax/script.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,6 +72,9 @@
         </div>
     </div>
 
+
+    <?php showTable();?>
+    
     
 
     <!--counter-->

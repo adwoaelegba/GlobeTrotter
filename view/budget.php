@@ -11,7 +11,7 @@ include("../actions/get_prices_action.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlobeTrotter-Budget</title>
-    <!--<link rel="stylesheet" href="../css/budget.css">-->
+    <link rel="stylesheet" href="../css/budget.css">
     <!-- Font Awesome CDN link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
@@ -31,14 +31,13 @@ include("../actions/get_prices_action.php");
     </header>
 <section class="main">
 <h1 class="title">Budget Calculator</h1>
+<h2 class="heading">Calculate your expenses</h2>
+
     <div class="container">
-    <h2 class="heading">Calculate your expenses</h2>
-
-
     <form>
 
-    <input type="text" id="country" name="country" placeholder="Enter country">
-    <input type="text" id="dur" name="dur" placeholder="Enter duration">
+    <input type="text" class="country-input" id="country" name="country" placeholder="Enter country">
+    <input type="text" class="dur-input" id="dur" name="dur" placeholder="Enter duration">
     <button type="submit" class="sub-btn" name="price" id="price" onclick="calculateCost('price');">Calculate</button>
 
     </form>
@@ -49,7 +48,9 @@ include("../actions/get_prices_action.php");
     
 </div>
 
-<div id="display"></div>
+<div class="display" id="display">
+    <div class="close">&times;</div>
+</div>
 <!--<div id="content">
     <div class="calculator">
         <input type="text" placeholder="0" class="entry" id="output">

@@ -106,7 +106,8 @@ function calculateCost(action){
             data:info,
             success:function(response){
                 //alert(response);
-                document.getElementById("display").innerText= 'Your total cost is: '+ response;
+                //document.getElementById("display").innerText= 'Your total cost is: '+ response;
+                $("#display").append('<div>Your total cost is: ' + response + '</div>');
             }
         })
 
@@ -114,13 +115,34 @@ function calculateCost(action){
    
  }
     
- //$.ajax({
-           // url:'../actions/get_prices_action.php',
-            //type:'post',
-            //data:data,
-            //success:function(response){
-                //document.getElementById("display").innerText= 'Your total cost is: '+ response;
-            //}
+
+ function submitTrip(action){
+    $(document).ready(function(){
+        var data= {
+            action:action,
+            book_id:$("#book_id").val(),
+            destination:$("#destination").val(),
+            date:$("#date").val(),
+            duration:$("#duration").val(),
+
+        };
+
+
+        $.ajax({
+            url:'../actions/edit.php',
+            type:'post',
+            data:data,
+            success:function(response){
+                alert(response);
+                if(response == "Deleted Successfully"){
+                    $("#"+action).css("display", "none");
+                }
+            }
+        })
+
+    })
+ }
+ 
 
 
 

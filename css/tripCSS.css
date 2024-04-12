@@ -165,4 +165,66 @@ width: 100%;
     font-size: 5rem;
     font-weight: 700;
 
+}#table-section {
+   
+    margin-bottom: 40px;
 }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2px
+        }
+
+
+        th, td {
+            border: 3px solid rgb(147, 210, 221);
+            padding: 20px;
+            text-align: left;
+            font-family: 'Cabin';
+        }
+
+
+        th {
+            background-color:rgb(219, 132, 31);
+            font-size: 24px;
+            
+        }
+
+
+        .completed-section {
+            color: black;
+        }
+
+
+        .chore-actions {
+            display: flex;
+            gap: 5px;
+        }
+
+
+        .action-button {
+            width: 70px;
+            height: 30px;
+            padding: 5px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .action-button-delete {
+            width: 70px;
+            height: 30px;
+            padding: 5px;
+            cursor: pointer;
+            background-color:red;
+            color: white;
+            border: none;
+            border-radius: 3px;
+        }
+
+
+

@@ -81,8 +81,8 @@ width: 100%;
 }
 
 .container{
-    width: 700px;
-    height: 200px;
+    width: 650px;
+    height: 300px;
     align-items: center;
     justify-content: center;
     border: none;
@@ -94,6 +94,11 @@ width: 100%;
 
 .main .title{
     font-size: 90px;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: 1rem;
+    padding: 1rem 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     font-family: 'Raleway';
     align-items: center;
     justify-content: center;
@@ -101,12 +106,55 @@ width: 100%;
 }
 
 .main .heading{
-    font-family: 'Ralewat';
+    font-family: 'Raleway';
     color: white;
-    font-size: 30px;
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
 }
 
-.main #budget{
+.country-input, .dur-input{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    margin-left: 100px;
+    border: none;
+    outline: none;
+    
+}
+
+.sub-btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    background-color: rgb(127, 127, 156);
+    color: white;
+    
+}
+
+.display{
+    width: 600px;
+    height: 200px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 40px;
+    background: rgba(194, 102, 118, 0.5);
+    justify-content: center;
+    margin-top: 150px;
+    align-items: center;
+}
+
+/*.main #budget{
     width: 500px;
     height: 40px;
     border: none;
@@ -219,7 +267,7 @@ input{
 .equal {
     background-color: #2196F3;
     color: white;
-}
+}*/
 
 
 
