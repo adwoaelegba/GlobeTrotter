@@ -97,7 +97,9 @@ include("../actions/book_trip_action.php");
                     </div>
                     <div class="btn">
                         <button type="submit" class="sub-btn" name="book" id="book" onclick="bookTrip('book');">Book</button>
-                        <button type="submit" class="sub-btn" name="receive">Receive Email</button>
+                        
+                        <a href="../view/trip.php" class="sub-btn">Manage Trips</a>
+
 
                         </div>
                 </div>

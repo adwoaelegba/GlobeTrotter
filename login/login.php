@@ -34,7 +34,7 @@ include("../actions/login_user_action.php");
 
 <div class="form">
     <!--log in form  -->
-    <form autocomplete="off"  class="login-form" method="post">
+    <form autocomplete="off"  action="../actions/log_user_action.php" class="login-form" method="post">
     <i class="fa-solid fa-circle-user"></i>
     <input type="hidden" id="action" value="login">
     <input type="text" name="email" id="email" class="user-input" placeholder="Email">
@@ -45,7 +45,8 @@ include("../actions/login_user_action.php");
         <a href="#">Forgot password</a>
 
     </div>
-    <button class="button" type="button"  onclick="submitData();">Log In</button>
+    <!--<button class="button" type="button"  onclick="submitData();">Log In</button>-->
+    <button class="button" type="submit">Log In</button>
     <div class="options-2">
         <p>Not registered? <a href="#">Create an account</a></p>
     </div>
