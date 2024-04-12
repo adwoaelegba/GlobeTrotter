@@ -1,5 +1,4 @@
 <?php
-//include("../functions/budgetFunctions.php");
 include("../ajax/script.php");
 include("../actions/get_prices_action.php");
 
@@ -38,18 +37,12 @@ include("../actions/get_prices_action.php");
 
     <form>
 
-    <input type="text" id="number" name="number" placeholder="Enter Number">
+    <input type="text" id="country" name="country" placeholder="Enter country">
     <input type="text" id="dur" name="dur" placeholder="Enter duration">
     <button type="submit" class="sub-btn" name="price" id="price" onclick="calculateCost('price');">Calculate</button>
 
     </form>
-      <!--<form >
-        <label for="countryDrop">Choose country</label>
-       
-        
-            <input type="number" name="duration" id="duration" placeholder="Enter your duration">
-            <button type="button" class="enter-btn"  onclick="calculateCost('price');">Calculate Cost</button>
-        </form>-->
+      
 
         
 

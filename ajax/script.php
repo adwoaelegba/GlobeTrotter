@@ -96,7 +96,7 @@ function calculateCost(action){
     $(document).ready(function(){
         var info= {
             action:action,
-            destination:$("#number").val(),
+            destination:$("#country").val(),
             duration:$("#dur").val(),
         };
 
@@ -105,7 +105,7 @@ function calculateCost(action){
             type: 'post',
             data:info,
             success:function(response){
-                alert(response);
+                //alert(response);
                 document.getElementById("display").innerText= 'Your total cost is: '+ response;
             }
         })

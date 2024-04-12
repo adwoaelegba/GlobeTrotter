@@ -16,15 +16,17 @@ function price(){
     $destination=$_POST["destination"];
     $duration=$_POST["duration"];
 
-    var_dump( $destination);
-    var_dump( $duration);
+    //var_dump( $destination);
+    //var_dump( $duration);
+
+    
 
 
 
   
-    $flight = "SELECT flight_price FROM destination WHERE dest_id = ?";
+    $flight = "SELECT flight_price FROM destination WHERE dest_name = ?";
     $stmt_flight = $con->prepare($flight);
-  $stmt_flight->bind_param("i", $destination);
+  $stmt_flight->bind_param("s", $destination);
   $stmt_flight->execute();
   $flightResult = $stmt_flight->get_result();
   if ($flightResult->num_rows > 0) {
@@ -35,9 +37,9 @@ function price(){
  $stmt_flight->close();
 
 
-  $hotel = "SELECT hotel_price FROM destination WHERE dest_id = ?";
+  $hotel = "SELECT hotel_price FROM destination WHERE dest_name = ?";
   $stmt_hotel = $con->prepare($hotel);
-$stmt_hotel->bind_param("i", $destination);
+$stmt_hotel->bind_param("s", $destination);
 $stmt_hotel->execute();
 $hotelResult = $stmt_hotel->get_result();
 if ($hotelResult->num_rows > 0) {
@@ -49,9 +51,9 @@ if ($hotelResult->num_rows > 0) {
 
 
 
-$tour = "SELECT tour_price FROM destination WHERE dest_id = ?";
+$tour = "SELECT tour_price FROM destination WHERE dest_name = ?";
 $stmt_select = $con->prepare($tour);
-$stmt_select->bind_param("i", $destination);
+$stmt_select->bind_param("s", $destination);
 $stmt_select->execute();
 $tourResult = $stmt_select->get_result();
 if ($tourResult->num_rows > 0) {
@@ -64,9 +66,9 @@ if ($tourResult->num_rows > 0) {
 
 
 
-$souvenir = "SELECT souvenir_price FROM destination WHERE dest_id = ?";
+$souvenir = "SELECT souvenir_price FROM destination WHERE dest_name = ?";
 $stmt_souvenir = $con->prepare($souvenir);
-$stmt_souvenir->bind_param("i", $destination);
+$stmt_souvenir->bind_param("s", $destination);
 $stmt_souvenir->execute();
 $souvenirResult = $stmt_souvenir->get_result();
 if ($souvenirResult->num_rows > 0) {
@@ -78,10 +80,10 @@ if ($souvenirResult->num_rows > 0) {
  }
  $stmt_souvenir->close();
 
- var_dump($tourPrice);
- var_dump($flightPrice);
- var_dump($souvenirPrice);
- var_dump($hotelPrice);
+ //var_dump($tourPrice);
+ //var_dump($flightPrice);
+ //var_dump($souvenirPrice);
+ //var_dump($hotelPrice);
 
 
  // Fetch and cast prices to floats
