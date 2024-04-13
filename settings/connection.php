@@ -3,7 +3,7 @@
 
 $SERVER='localhost';
 $USERNAME="root";
-$PASSWD="";
+$PASSWD="JJLXSURT/2Yn";
 $DATABASE="travel";
 
 //Create a conneection

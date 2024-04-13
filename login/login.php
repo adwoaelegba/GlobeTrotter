@@ -48,16 +48,26 @@ include("../actions/login_user_action.php");
     </div>
 </form>
 
+<<<<<<< HEAD
 <!--form end -->
 <!--sign in -->
+=======
+>>>>>>> f2f2afdcb49234717dff7a4c90012de3add1c692
 <form autocomplete="off" class="sign-up" action="" method="post">
 <i class="fa-solid fa-user-plus"></i>
 <input class="user-input" type="text" name="firstName" id="firstName" placeholder="First Name">
 <input class="user-input" type="text" name="lastName"  id="lastName"  placeholder="Last Name">
+<<<<<<< HEAD
 <input class="user-input" type="email" name="email"  id="email_s" placeholder="Email">
 <input class="user-input" type="text" name="phone" id="phone" placeholder="Phone">
 <input class="user-input" type="text" name="country" id="country" placeholder="Country">
 <input class="user-input" type="password" name="password" id="password_s" placeholder="Password">
+=======
+<input class="user-input" type="email" name="email"  id="email" placeholder="Email">
+<input class="user-input" type="text" name="phone" id="phone" placeholder="Phone">
+<input class="user-input" type="text" name="country" id="country" placeholder="Country">
+<input class="user-input" type="password" name="password" id="password" placeholder="Password">
+>>>>>>> f2f2afdcb49234717dff7a4c90012de3add1c692
 <input class="user-input" type="password" name="cpassword" placeholder="Confirm password">
 <button class="button" type="button" onclick="submitInfo('insert');">Sign up</button>
 
@@ -66,6 +76,10 @@ include("../actions/login_user_action.php");
 
 </div>
 </form>
+<<<<<<< HEAD
+=======
+
+>>>>>>> f2f2afdcb49234717dff7a4c90012de3add1c692
 
 
 <script type="text/javascript">
