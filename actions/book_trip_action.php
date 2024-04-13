@@ -33,13 +33,6 @@ function book(){
     $email = $_POST["email"];
     $phone = $_POST["phone"];
 
-    var_dump($travel_date);
-    var_dump($payment);
-    var_dump($lastName);
-    var_dump($email);
-    var_dump($phone);
-
-
    
 
 
