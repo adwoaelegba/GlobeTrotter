@@ -2,15 +2,6 @@
 
 
 
-//if(isset($_SESSION['pid'])) {
-   // $pid = $_SESSION['pid'];
-//} else {
-   // echo  'No pid';
-//}
-
-// Fetch the user ID from the session
-
-
 include("../settings/connection.php");
 
 
@@ -32,6 +23,7 @@ function book(){
     $lastName = $_POST["lastName"];
     $email = $_POST["email"];
     $phone = $_POST["phone"];
+
 
    
 
