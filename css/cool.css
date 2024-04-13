@@ -1,0 +1,91 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e; /* Dark blue background */
+    color: #e6e6e6; /* Light grey text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+header .brand {
+    font-size: 24px;
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.form {
+    background-color: #16213e; /* Slightly lighter blue for the form background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #0f3460;
+    border-radius: 5px;
+    background-color: transparent;
+    color: inherit;
+}
+
+.user-input:focus {
+    outline: none;
+    border-color: #4a47a3; /* Highlight focus with a different blue */
+}
+
+button.button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0f3460; /* Blue button background */
+    color: #e6e6e6;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.button:hover {
+    background-color: #4a47a3; /* Lighter blue on hover */
+}
+
+.options-2 p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.options-2 a {
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.options-2 a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .form {
+        width: 90%;
+    }
+}

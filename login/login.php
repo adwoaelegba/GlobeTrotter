@@ -31,55 +31,30 @@ include("../actions/login_user_action.php");
 <div class="form">
     <!--log in form  -->
     <form autocomplete="off"  action="../actions/log_user_action.php" class="login-form" method="post">
-    <i class="fa-solid fa-circle-user"></i>
-    <input type="hidden" id="action" value="login">
-    <input type="text" name="email" id="email" class="user-input" placeholder="Email">
-    <input type="password" name="password" id="password" class="user-input" placeholder="Password">
-    
-    <div class="options-1">
-        <label class="remember"><input type="checkbox">Remember me</label>
-        <a href="#">Forgot password</a>
+        <i class="fa-solid fa-circle-user"></i>
+        <input type="hidden" id="action" value="login">
+        <input type="text" name="email" id="email" class="user-input" placeholder="Email">
+        <input type="password" name="password" id="password" class="user-input" placeholder="Password">
+        
+        <div class="options-1">
+            <label class="remember"><input type="checkbox">Remember me</label>
+            <a href="#">Forgot password</a>
 
-    </div>
-    <!--<button class="button" type="button"  onclick="submitData();">Log In</button>-->
-    <button class="button" type="submit">Log In</button>
-    <div class="options-2">
-        <p>Not registered? <a href="#">Create an account</a></p>
-    </div>
-</form>
+        </div>
+        <!--<button class="button" type="button"  onclick="submitData();">Log In</button>-->
+        <button class="button" type="submit">Log In</button>
+        <div class="options-2">
+            <p>Not registered? <a href="register.php">Create an account</a></p>
+            
+        </div>
 
-<<<<<<< HEAD
-<!--form end -->
-<!--sign in -->
-=======
->>>>>>> f2f2afdcb49234717dff7a4c90012de3add1c692
-<form autocomplete="off" class="sign-up" action="" method="post">
-<i class="fa-solid fa-user-plus"></i>
-<input class="user-input" type="text" name="firstName" id="firstName" placeholder="First Name">
-<input class="user-input" type="text" name="lastName"  id="lastName"  placeholder="Last Name">
-<<<<<<< HEAD
-<input class="user-input" type="email" name="email"  id="email_s" placeholder="Email">
-<input class="user-input" type="text" name="phone" id="phone" placeholder="Phone">
-<input class="user-input" type="text" name="country" id="country" placeholder="Country">
-<input class="user-input" type="password" name="password" id="password_s" placeholder="Password">
-=======
-<input class="user-input" type="email" name="email"  id="email" placeholder="Email">
-<input class="user-input" type="text" name="phone" id="phone" placeholder="Phone">
-<input class="user-input" type="text" name="country" id="country" placeholder="Country">
-<input class="user-input" type="password" name="password" id="password" placeholder="Password">
->>>>>>> f2f2afdcb49234717dff7a4c90012de3add1c692
-<input class="user-input" type="password" name="cpassword" placeholder="Confirm password">
-<button class="button" type="button" onclick="submitInfo('insert');">Sign up</button>
-
-<div class="options-2">
-    <p>Already Registered? <a href="#">Sign In</a></p>
-
+       
+    </form>
 </div>
-</form>
-<<<<<<< HEAD
-=======
 
->>>>>>> f2f2afdcb49234717dff7a4c90012de3add1c692
+
+
+
 
 
 <script type="text/javascript">

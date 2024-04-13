@@ -9,24 +9,9 @@ if(isset($_POST["action"])){
         insert();
     }
 }
+global $con;
+if($_SERVER["REQUEST_METHOD"] =="POST"){
 
-
-function insert(){
-    global $con;
-
-   
-
-    //$insert = "INSERT INTO users VALUES ('' , '$firstName' , '$lastName', ' $email', '$phone',' $country', '$passhash')";
-    //mysqli_query($con, $insert);
-    //echo "Inserted successfully";
-
-    $insert =  "INSERT INTO users (first_name, last_name, email, phone_num, country, password) VALUES (?, ?, ?, ?, ?, ?)";
-    $stmt = $con->prepare($insert);
-
-    $stmt->bind_param("sssiss", $firstName, $lastName, $email, $phone, $country, $passhash);
-
-    var_dump($_POST);
-    
     $firstName = $_POST["firstName"];
     $lastName = $_POST["lastName"];
     $email=$_POST["email"];
@@ -34,18 +19,26 @@ function insert(){
     $country = $_POST["country"];
     $password = $_POST["password"];
     $passhash = password_hash($password, PASSWORD_DEFAULT);
+   
+   
 
-    if ($stmt->execute()) {
-        echo 'Register';
-        
-    } else {
-        //echo 'Registration failed';
+    $sql_query = "INSERT INTO users (first_name, last_name, email, phone_num, country, password) VALUES ('$firstName', '$lastName','$email', '$phone', '$country', '$passhash')";
+    $insertion = mysqli_query($con, $sql_query);
+    if($insertion){
+        header("location: ../login/login.php");
     }
-
-    $stmt->close();
-
-
-
+    else{
+       // echo "Failed Terribly";
+       //return false;
+    }
 }
 
+
+
 ?>
+
+
+
+
+
+
