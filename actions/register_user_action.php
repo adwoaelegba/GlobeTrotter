@@ -25,6 +25,8 @@ function insert(){
 
     $stmt->bind_param("sssiss", $firstName, $lastName, $email, $phone, $country, $passhash);
 
+    var_dump($_POST);
+    
     $firstName = $_POST["firstName"];
     $lastName = $_POST["lastName"];
     $email=$_POST["email"];

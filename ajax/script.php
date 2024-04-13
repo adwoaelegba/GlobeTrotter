@@ -12,8 +12,8 @@ function submitInfo(action){
             pid:$("#pid").val(),
             firstName:$("#firstName").val(),
             lastName:$("#lastName").val(),
-            email:$("#email").val(),
-            phone:$("#phone").val(),
+            email:$("#email_s").val(),
+            phone:$("#phone_s").val(),
             country:$("#country").val(),
             password:$("#password").val(),
         };
