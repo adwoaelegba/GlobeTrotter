@@ -28,28 +28,11 @@ include("../actions/login_user_action.php");
 </head>
 <body>
 
-<header>
-<a href="#" class="brand">GlobeTrotter</a>
-</header>
+
 
 <div class="form">
-    <!--log in form  -->
-    <form autocomplete="off"  action="../actions/log_user_action.php" class="login-form" method="post">
-    <i class="fa-solid fa-circle-user"></i>
-    <input type="hidden" id="action" value="login">
-    <input type="text" name="email" id="email" class="user-input" placeholder="Email">
-    <input type="password" name="password" id="password" class="user-input" placeholder="Password">
     
-    <div class="options-1">
-        <label class="remember"><input type="checkbox">Remember me</label>
-        <a href="#">Forgot password</a>
-
-    </div>
-    <!--<button class="button" type="button"  onclick="submitData();">Log In</button>-->
-    <button class="button" type="submit">Log In</button>
-    <div class="options-2">
-        <p>Not registered? <a href="register.php">Create an account</a></p>
-        <form autocomplete="off" class="sign-up" action="" method="post">
+    <form autocomplete="off" class="sign-up" action="" method="post">
             <i class="fa-solid fa-user-plus"></i>
             <input class="user-input" type="text" name="firstName" id="firstName" placeholder="First Name">
             <input class="user-input" type="text" name="lastName"  id="lastName"  placeholder="Last Name">
@@ -64,11 +47,8 @@ include("../actions/login_user_action.php");
                 <p>Already Registered? <a href="login.php">Sign In</a></p>
 
             </div>
-        </form>
-    
-    </div>
-    
     </form>
+    
 </div>
 
 
