@@ -2,15 +2,6 @@
 
 
 
-//if(isset($_SESSION['pid'])) {
-   // $pid = $_SESSION['pid'];
-//} else {
-   // echo  'No pid';
-//}
-
-// Fetch the user ID from the session
-
-
 include("../settings/connection.php");
 
 
@@ -33,11 +24,7 @@ function book(){
     $email = $_POST["email"];
     $phone = $_POST["phone"];
 
-    var_dump($travel_date);
-    var_dump($payment);
-    var_dump($lastName);
-    var_dump($email);
-    var_dump($phone);
+    
 
 
    
